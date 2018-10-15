@@ -1,4 +1,4 @@
-#### Key Sounds
+##### Key Sounds
 
 **Key Sounds** is a simple background program for Windows that provides a typewriter sound whenever a key is pressed.
 As well as being a novelty gimmick **Key Sounds** does actually have a functional use as an accessability tool for people who have limited fine motor control or very weak muscles. They get audible feedback to let them know they have pushed the keys correctly.
