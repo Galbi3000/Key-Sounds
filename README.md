@@ -3,6 +3,8 @@
 **Key Sounds** is a simple background program for Windows that provides a typewriter sound whenever a key is pressed.
 As well as being a novelty gimmick **Key Sounds** does actually have a functional use as an accessability tool for people who have limited fine motor control or very weak muscles. They get audible feedback to let them know they have pushed the keys correctly.
 
+This project was created in an old version of Visual Studio on Windows XP. It does compile in Visual Studio 2017 but I have not included any updated solution and project files as some people might want to compile it in an older version of Visual Studio.
+
 ## Origin Story
 
 Many years ago I used to use an instant messaging system called ICQ. The desktop program for ICQ back then included a novel feature to have a typewriter sound while you type messages. I liked that effect so in January of 2004 I decided to see if I could make it work for any program. **Key Sounds** is the result.
