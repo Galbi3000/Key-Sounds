@@ -1,23 +1,27 @@
 # Key Sounds
 
 **Key Sounds** is a simple background program for Windows that provides a typewriter sound whenever a key is pressed.
-As well as being a novelty gimmick **Key Sounds** does actually have a functional use as an accessability tool for people who have limited fine motor control or very weak muscles. They get audible feedback to let them know they have pushed the keys correctly.
+As well as being a novelty gimmick **Key Sounds** does actually have a functional use as an accessibility tool for people who have limited fine motor control or very weak muscles. They get audible feedback to let them know they have pushed the keys correctly.
 
-This project was created in an old version of Visual Studio on Windows XP. It does compile in Visual Studio 2017 but I have not included any updated solution and project files as some people might want to compile it in an older version of Visual Studio.
+This project was created in an old version of Visual Studio on Windows XP. It does compile in Visual Studio Community 2017 but I have not included any updated solution and project files as some people might want to compile it in an older version of Visual Studio.
 
 ## Origin Story
 
-Many years ago I used to use an instant messaging system called ICQ. The desktop program for ICQ back then included a novel feature to have a typewriter sound while you type messages. I liked that effect so in January of 2004 I decided to see if I could make it work for any program. **Key Sounds** is the result.
+Many years ago, I used to use an instant messaging system called ICQ. The desktop program for ICQ back then included a novel feature to have a typewriter sound while you type messages. I liked that effect so in January of 2004 I decided to see if I could make it work for any program. **Key Sounds** is the result.
 
 I named it **Key Sounds** to make it future proof. I planned to increase its functionality to allow for more sounds to be used. Alas life changes put **Key Sounds** on semi-permanent hold for many years! Today (the day this GitHub project was created) I decided I would release the code here. Maybe if there is interest I might be motivated to continue with the project.
 
 ## Usage
 
-To use **Key Sounds** simply run the application! Your keyboard will now start producing that old classic typewriter sound whever keys are pressed! **Key Sounds** runs in the background with an icon showing in the taskbar notification area. Double clicking that icon will bring up the about box for the program and right clicking will bring up a prompt asking if you want to close the program.
+To use **Key Sounds** simply run the application! Your keyboard will now start producing that old classic typewriter sound whenever keys are pressed! **Key Sounds** runs in the background with an icon showing in the taskbar notification area. Double clicking that icon will bring up the about box for the program and right clicking will bring up a prompt asking if you want to close the program.
+
+## Download
+
+Currently there is no download package for **Key Sounds**. I have included the compiled executable in the Git project files in the Release folder inside src. Just download **KeySounds.EXE** from there as that is all you need to run it!
 
 ## Version Changes
 
-What follows is an almost direct copy from my old README.TXT file so it does not follow current conventions. It's easy enough to read though. The version changes do seem to take a long time but at the time I wrote it I was also a full time father to 3 very young children! It was a spare time only project.
+What follows is an almost direct copy from my old README.TXT file so it does not follow current conventions. It's easy enough to read though. The version changes do seem to take a long time but at the time I wrote it I was also a full-time father to 3 very young children! It was a spare time only project.
 
 ### Beta Versions:
 
@@ -63,4 +67,4 @@ These are all the features and changes I had planned for the project but never g
 3. Include a selection of alternative sounds to the typewriter.
 4. Include an option for a custom user supplied sound.
 5. Include a enable/disable sounds option in the pop up menu so the program does not have to be closed to stop sounds.
-6. Add an option to have the program run at startup.
+6. Add an option to have the program run at start-up.
