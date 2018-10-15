@@ -56,8 +56,9 @@ These are all the features and changes I had planned for the project but never g
 1. **KeySounds** currently responds to all keys. It needs to ignore modifier keys Shift, Control and Alt.
 
 ### Planned Additions:
-1. A pop up menu with options when you right click the notification area icon.
-2. Include a selection of alternative sounds to the typewriter.
-3. Include an option for a custom user supplied sound.
-4. Include a enable/disable sounds option in the pop up menu so the program does not have to be closed to stop sounds.
-5. Add an option to have the program run at startup.
+1. Use a different sound for RETURN/ENTER keys.
+2. A pop up menu with options when you right click the notification area icon.
+3. Include a selection of alternative sounds to the typewriter.
+4. Include an option for a custom user supplied sound.
+5. Include a enable/disable sounds option in the pop up menu so the program does not have to be closed to stop sounds.
+6. Add an option to have the program run at startup.
