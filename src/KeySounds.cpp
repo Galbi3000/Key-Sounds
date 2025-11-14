@@ -140,7 +140,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 	taskbarIconData.uCallbackMessage = STATUS_ICON_ID;
 	hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_KEYSOUNDS));
 	taskbarIconData.hIcon = hIcon;
-	strcpy(taskbarIconData.szTip, "Key Sounds - Version 1.0 Beta - Copyright 2004 TannSoft");
+	strcpy_s(taskbarIconData.szTip, "Key Sounds - Version 1.0 Beta - Copyright 2004 TannSoft");
 	taskbarIconData.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP;
 
 	Shell_NotifyIcon(NIM_ADD, &taskbarIconData);
@@ -215,7 +215,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			break;
 		case WM_USER:					// Keyboard hook sent a message!
 			// Make a sound!
-			PlaySound("IDR_TYPEWAVE", hInst, SND_RESOURCE|SND_ASYNC);
+			switch (wParam)
+			{
+				case 1:
+					PlaySound("IDR_TYPEWAVE", hInst, SND_RESOURCE | SND_ASYNC);
+					break;
+				case 2:
+					break;
+			}
+			wParam = 0;
 			break;
 		case STATUS_ICON_ID:			// Defined as WM_USER+1... Process messages from the taskbar icon here
 			if(lParam == WM_RBUTTONDOWN)
@@ -262,9 +270,12 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 		switch (wParam)
 		{
 			case WM_KEYDOWN:
+				// Send message to WndProc to tell it to make a sound
+				SendMessage(hMainWnd, WM_USER, 1, lParam);
+				break;
 			case WM_SYSKEYDOWN:
 				// Send message to WndProc to tell it to make a sound
-				SendMessage(hMainWnd, WM_USER, 0, lParam);
+				SendMessage(hMainWnd, WM_USER, 2, lParam);
 				break;
 		}
 		return CallNextHookEx(hKeyLLHook, nCode, wParam, lParam);
