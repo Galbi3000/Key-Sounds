@@ -180,10 +180,6 @@ void Tidy(void)
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	int wmId, wmEvent;
-	PAINTSTRUCT ps;
-	HDC hdc;
-	TCHAR szHello[MAX_LOADSTRING];
-	LoadString(hInst, IDS_HELLO, szHello, MAX_LOADSTRING);
 
 	switch (message) 
 	{
@@ -201,14 +197,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				default:
 				   return DefWindowProc(hWnd, message, wParam, lParam);
 			}
-			break;
-		case WM_PAINT:
-			hdc = BeginPaint(hWnd, &ps);
-			// TODO: Add any drawing code here...
-			RECT rt;
-			GetClientRect(hWnd, &rt);
-			DrawText(hdc, szHello, strlen(szHello), &rt, DT_CENTER);
-			EndPaint(hWnd, &ps);
 			break;
 		case WM_DESTROY:
 			PostQuitMessage(0);

@@ -16,13 +16,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// English (U.S.) resources
+// English (United States) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -32,6 +30,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_KEYSOUNDS           ICON                    "KeySounds.ICO"
+
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -69,29 +68,25 @@ END
 
 IDR_TYPEWAVE            WAVE                    "Type.wav"
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
 //
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 168, 119
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
-    WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "About Key Sounds"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,59,98,50,14
-    ICON            IDI_KEYSOUNDS,IDC_STATIC,16,14,21,20
+    ICON            IDI_KEYSOUNDS,IDC_STATIC,16,14,20,20
     CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,154,82
     LTEXT           "Key Sounds",IDC_STATIC,55,15,91,11,0,WS_EX_TRANSPARENT
-    LTEXT           "Version 1.0 Beta",IDC_STATIC,55,26,91,11,0,
-                    WS_EX_TRANSPARENT
-    CTEXT           "© Copyright 2004 TannSoft",IDC_STATIC,29,48,110,11,0,
-                    WS_EX_TRANSPARENT
-    CTEXT           "Right click taskbar icon to close",IDC_STATIC,29,76,110,
-                    11,0,WS_EX_TRANSPARENT
-    CTEXT           "Written By J. Tann",IDC_STATIC,29,58,110,11,0,
-                    WS_EX_TRANSPARENT
+    LTEXT           "Version 1.0 Beta",IDC_STATIC,55,26,91,11,0,WS_EX_TRANSPARENT
+    CTEXT           "© Copyright 2004 TannSoft",IDC_STATIC,29,48,110,11,0,WS_EX_TRANSPARENT
+    CTEXT           "Right click taskbar icon to close",IDC_STATIC,29,76,110,11,0,WS_EX_TRANSPARENT
+    CTEXT           "Written By J. Tann",IDC_STATIC,29,58,110,11,0,WS_EX_TRANSPARENT
 END
 
 
@@ -101,7 +96,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -116,17 +111,27 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_APP_TITLE           "KeySounds"
-    IDS_HELLO               "Hello World!"
     IDC_KEYSOUNDS           "KEYSOUNDS"
 END
 
-#endif    // English (U.S.) resources
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
